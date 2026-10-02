@@ -5,10 +5,10 @@ This file tracks actual work completed in the Hospital Management Web Applicatio
 ## Completed
 
 - [x] Day 1 — Project planning, initial folder structure, README, `.gitignore`, and setup checks.
+- [x] Day 2 — Public hospital homepage with responsive navigation, introduction, services, departments, contact section, and footer.
 
 ## Pending
 
-- [ ] Day 2 — Build the public hospital home page.
 - [ ] Day 3 — Create the login and dashboard interfaces.
 - [ ] Day 4 — Create the patient management interface.
 - [ ] Day 5 — Create doctor and appointment interfaces.
@@ -25,6 +25,13 @@ This file tracks actual work completed in the Hospital Management Web Applicatio
 - Apache Tomcat and the MySQL command-line client were not found in PATH during the setup check.
 - Current branch: `main`.
 - GitHub remote: `https://github.com/rishi95-arch/hospital-management-system.git`.
-- The application is not runnable yet; feature development starts on Day 2.
+- The full application is not complete. The Day 2 static homepage opens directly in a browser; backend/server/database features remain pending.
+
+## Day 2 notes
+
+- Added `frontend/index.html`, `frontend/css/style.css`, and `frontend/js/main.js`.
+- The page is a static public-facing homepage. Its department and contact information are clearly marked as sample/demo content.
+- Checked HTML parsing, in-page navigation targets, local asset links, JavaScript syntax, and whitespace errors. Opened the page locally and inspected its narrow-screen layout.
+- Admin login, dashboard, database, and backend behavior remain pending.
 
 Roadmap items may be adjusted to match actual progress and course requirements. Do not mark pending work complete before it is implemented and checked.

@@ -18,7 +18,7 @@ A medium-level, browser-based BCA semester project for managing basic hospital r
 - Doctor records
 - Appointments (patient, doctor, date, time, status)
 
-The project is being built incrementally. Features will be documented as they are implemented; this initial setup does not yet contain a working application.
+The project is being built incrementally. The public homepage is the first browser page; admin, database, and backend features are still planned.
 
 ## Development roadmap
 
@@ -40,9 +40,9 @@ The roadmap can change to match actual progress and course requirements. No unfi
 
 ```text
 frontend/
-  index.html           # To be created on Day 2
-  css/                 # Stylesheets
-  js/                  # Browser-side JavaScript
+  index.html           # Public hospital homepage (Day 2)
+  css/style.css        # Homepage styles and responsive layout
+  js/main.js           # Mobile navigation and footer year
 backend/
   src/main/java/       # Java source (Servlets, models, DAO)
 database/              # SQL schema and sample data
@@ -54,6 +54,6 @@ README.md
 
 Use a JDK, Git, a code editor, Apache Tomcat, and MySQL. The local setup should be checked before installing anything. Java and Git are currently available; Tomcat and MySQL command-line tools were not found in PATH during the Day 1 check.
 
-## Running the project
+## Running the current page
 
-There is no runnable web application yet. After the initial frontend is added, it can be opened in a browser. Servlet/JSP functionality will require Tomcat and will be configured in a later stage.
+Open `frontend/index.html` in a web browser to view the current static homepage. The homepage does not need Tomcat. Servlet/JSP functionality will need Tomcat and will be configured in a later stage. Department and contact details are demonstration content and should be reviewed before the final presentation.

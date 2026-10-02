@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6faf9">
+    <meta name="description" content="A welcoming hospital homepage concept for the Hospital Management Web Application student project.">
+    <title>CarePoint Hospital | Care you can count on</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="icon-cross" viewBox="0 0 24 24">
+        <path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6V3Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-heart" viewBox="0 0 24 24">
+        <path d="M20.8 8.7c0 5.2-8.8 10.2-8.8 10.2S3.2 13.9 3.2 8.7A4.7 4.7 0 0 1 12 6.2a4.7 4.7 0 0 1 8.8 2.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+        <path d="M5.5 12h3l1.5-3 2.3 6 1.6-3h5.1" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-person" viewBox="0 0 24 24">
+        <circle cx="12" cy="7.5" r="3.3" fill="none" stroke="currentColor" stroke-width="1.7"/>
+        <path d="M5.5 20v-1.7a6.5 6.5 0 0 1 13 0V20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="icon-calendar" viewBox="0 0 24 24">
+        <rect x="3.5" y="5" width="17" height="15.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+        <path d="M7.5 3v4m9-4v4M4 9.5h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="icon-location" viewBox="0 0 24 24">
+        <path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" fill="none" stroke="currentColor" stroke-width="1.7"/>
+        <circle cx="12" cy="10" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/>
+        <path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      </symbol>
+    </svg>
+
+    <div class="announcement-bar">
+      <div class="container announcement-inner">
+        <span class="announcement-dot" aria-hidden="true"></span>
+        <p>Thoughtful care for every stage of life</p>
+        <a href="#contact">Plan your visit <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="CarePoint Hospital home">
+          <span class="brand-mark"><svg aria-hidden="true"><use href="#icon-cross"></use></svg></span>
+          <span class="brand-name">carepoint<span>hospital</span></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#departments">Departments</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="button button-small header-cta" href="#contact">Get in touch <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> A hospital for your whole family</p>
+            <h1 id="hero-title">Care you can <span>count on.</span></h1>
+            <p class="hero-description">A welcoming place for guidance, check-ups and care across life’s everyday health needs.</p>
+            <div class="hero-actions">
+              <a class="button" href="#services">Explore our services <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+              <a class="text-link" href="#about">Get to know us</a>
+            </div>
+            <div class="hero-note">
+              <span class="note-icon"><svg aria-hidden="true"><use href="#icon-heart"></use></svg></span>
+              <p><strong>Care starts with listening.</strong><br>Here for you and your family.</p>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-label="Illustration of a welcoming hospital building" role="img">
+            <div class="art-orbit orbit-one"></div>
+            <div class="art-orbit orbit-two"></div>
+            <div class="sun-shape"></div>
+            <div class="building-shadow"></div>
+            <div class="hospital-building">
+              <div class="building-roof"><span></span><span></span><span></span><span></span></div>
+              <div class="building-sign"><span class="sign-cross"><svg aria-hidden="true"><use href="#icon-cross"></use></svg></span><span>CAREPOINT<br><small>HOSPITAL</small></span></div>
+              <div class="building-windows" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="building-door"></div>
+            </div>
+            <div class="art-caption"><span class="caption-sparkle" aria-hidden="true">✳</span><span>Here for your health<br><small>Every step of the way</small></span></div>
+            <div class="art-leaf leaf-one"></div>
+            <div class="art-leaf leaf-two"></div>
+          </div>
+        </div>
+        <div class="hero-wave" aria-hidden="true"></div>
+      </section>
+
+      <section class="care-points" aria-label="Our approach to care">
+        <div class="container care-points-inner">
+          <div><span class="point-number">01</span><span>People-first approach</span></div>
+          <div><span class="point-number">02</span><span>Care across specialties</span></div>
+          <div><span class="point-number">03</span><span>Clear appointment support</span></div>
+        </div>
+      </section>
+
+      <section class="section services-section" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span></span> What we offer</p>
+              <h2 id="services-title">Care made a little <span>simpler.</span></h2>
+            </div>
+            <p class="section-intro">Find the right place to start, with support for common health needs and everyday visits.</p>
+          </div>
+          <div class="service-grid">
+            <article class="service-card service-card-featured">
+              <span class="card-index">01</span>
+              <span class="service-icon"><svg aria-hidden="true"><use href="#icon-person"></use></svg></span>
+              <h3>Doctor consultations</h3>
+              <p>Meet with a care professional for guidance, check-ups and follow-up support.</p>
+              <a href="#departments" aria-label="Explore departments for doctor consultations">Explore departments <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+            </article>
+            <article class="service-card">
+              <span class="card-index">02</span>
+              <span class="service-icon icon-mint"><svg aria-hidden="true"><use href="#icon-heart"></use></svg></span>
+              <h3>Diagnostic support</h3>
+              <p>Get help understanding the next steps for common tests and health checks.</p>
+              <a href="#contact" aria-label="Contact us about diagnostic support">Learn more <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+            </article>
+            <article class="service-card">
+              <span class="card-index">03</span>
+              <span class="service-icon icon-peach"><svg aria-hidden="true"><use href="#icon-calendar"></use></svg></span>
+              <h3>Appointment guidance</h3>
+              <p>Our team can help you understand how to plan and prepare for a visit.</p>
+              <a href="#contact" aria-label="Contact us for appointment guidance">Plan a visit <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="about-visual" aria-hidden="true">
+            <div class="about-circle circle-large"></div>
+            <div class="about-circle circle-small"></div>
+            <div class="about-quote-card"><span class="quote-mark">“</span><p>Good care is built on trust, time and understanding.</p><span class="quote-line"></span></div>
+            <div class="about-stamp"><svg><use href="#icon-heart"></use></svg><span>Care<br>with heart</span></div>
+            <div class="about-sparkle sparkle-one">✳</div><div class="about-sparkle sparkle-two">✳</div>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow"><span></span> A little about us</p>
+            <h2 id="about-title">A friendly place to begin your <span>care journey.</span></h2>
+            <p>Finding care should feel clear and welcoming. CarePoint brings essential hospital information, departments and visit guidance together in one easy-to-understand place.</p>
+            <p>This student project is designed around simple, organized communication between the hospital team and the people they care for.</p>
+            <a class="text-link text-link-dark" href="#contact">Talk to our team <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section departments-section" id="departments" aria-labelledby="departments-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span></span> Our departments</p>
+              <h2 id="departments-title">Different needs, thoughtful <span>care.</span></h2>
+            </div>
+            <p class="section-intro">Explore some of the specialties represented in this hospital project.</p>
+          </div>
+          <div class="department-grid">
+            <article class="department-card"><span class="department-symbol symbol-blue">G</span><div><h3>General Medicine</h3><p>Everyday health and check-ups</p></div><span class="department-arrow" aria-hidden="true">↗</span></article>
+            <article class="department-card"><span class="department-symbol symbol-peach">P</span><div><h3>Pediatrics</h3><p>Care for children and families</p></div><span class="department-arrow" aria-hidden="true">↗</span></article>
+            <article class="department-card"><span class="department-symbol symbol-mint">O</span><div><h3>Orthopedics</h3><p>Bones, joints and movement</p></div><span class="department-arrow" aria-hidden="true">↗</span></article>
+            <article class="department-card"><span class="department-symbol symbol-lilac">C</span><div><h3>Cardiology</h3><p>Heart health consultations</p></div><span class="department-arrow" aria-hidden="true">↗</span></article>
+          </div>
+          <p class="demo-note">Department names are sample project content and can be changed to match your final project.</p>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-panel">
+          <div class="contact-copy">
+            <p class="eyebrow eyebrow-light"><span></span> We’re here to help</p>
+            <h2 id="contact-title">Your next step starts with a <span>conversation.</span></h2>
+            <p>Reach out to learn more about services, departments or planning a visit.</p>
+            <a class="button button-light" href="mailto:hello@carepoint.example">Email our team <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+          </div>
+          <div class="contact-details">
+            <div class="contact-detail"><span class="detail-icon"><svg aria-hidden="true"><use href="#icon-location"></use></svg></span><div><h3>Visit</h3><p>CarePoint Hospital<br>Your City, India</p></div></div>
+            <div class="contact-detail"><span class="detail-icon"><svg aria-hidden="true"><use href="#icon-clock"></use></svg></span><div><h3>Hours</h3><p>Monday – Saturday<br>9:00 AM – 6:00 PM</p></div></div>
+            <p class="contact-demo-note">Demo contact details — replace these with approved project details before your final presentation.</p>
+          </div>
+          <div class="contact-decoration" aria-hidden="true"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <a class="brand brand-footer" href="#home" aria-label="CarePoint Hospital home">
+          <span class="brand-mark"><svg aria-hidden="true"><use href="#icon-cross"></use></svg></span>
+          <span class="brand-name">carepoint<span>hospital</span></span>
+        </a>
+        <p>A student project concept for clear, people-first hospital information.</p>
+        <div class="footer-links"><a href="#services">Services</a><a href="#departments">Departments</a><a href="#contact">Contact</a></div>
+      </div>
+      <div class="container footer-bottom"><span>© <span id="current-year">2026</span> CarePoint Hospital — student project concept</span><a href="#home">Back to top ↑</a></div>
+    </footer>
+  </body>
+</html>
