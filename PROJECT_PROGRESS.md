@@ -6,10 +6,10 @@ This file tracks actual work completed in the Hospital Management Web Applicatio
 
 - [x] Day 1 — Project planning, initial folder structure, README, `.gitignore`, and setup checks.
 - [x] Day 2 — Public hospital homepage with responsive navigation, introduction, services, departments, contact section, and footer.
+- [x] Day 3 — Admin login and dashboard UI previews, including basic browser-side interactions.
 
 ## Pending
 
-- [ ] Day 3 — Create the login and dashboard interfaces.
 - [ ] Day 4 — Create the patient management interface.
 - [ ] Day 5 — Create doctor and appointment interfaces.
 - [ ] Day 6 — Design the MySQL schema and sample data.
@@ -32,6 +32,14 @@ This file tracks actual work completed in the Hospital Management Web Applicatio
 - Added `frontend/index.html`, `frontend/css/style.css`, and `frontend/js/main.js`.
 - The page is a static public-facing homepage. Its department and contact information are clearly marked as sample/demo content.
 - Checked HTML parsing, in-page navigation targets, local asset links, JavaScript syntax, and whitespace errors. Opened the page locally and inspected its narrow-screen layout.
-- Admin login, dashboard, database, and backend behavior remain pending.
+- The homepage is static and has no database connection. Admin and dashboard screens are planned for Day 3, while authentication and database-backed behavior remain pending.
+
+## Day 3 notes
+
+- Added `frontend/login.html` and `frontend/dashboard.html`; the public homepage footer now links to the login preview.
+- Added `frontend/css/forms.css`, `frontend/css/dashboard.css`, `frontend/js/login.js`, and `frontend/js/dashboard.js`.
+- Login fields use basic browser validation. The password can be shown/hidden. Submitting valid-looking values only shows a note; it does not log in, send, or save credentials.
+- The dashboard displays fictional sample totals and appointment rows. Patient, doctor, and appointment navigation is visibly marked “Soon”; no records are read from or written to MySQL.
+- The dashboard date and mobile sidebar menu work in the UI preview. Authentication and database connectivity remain pending.
 
 Roadmap items may be adjusted to match actual progress and course requirements. Do not mark pending work complete before it is implemented and checked.

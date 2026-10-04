@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f1f7f5">
+    <meta name="description" content="Admin sign-in page UI concept for the CarePoint Hospital student project.">
+    <title>Admin Login | CarePoint Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <script src="js/login.js" defer></script>
+  </head>
+  <body class="auth-page">
+    <a class="skip-link" href="#login-main">Skip to login form</a>
+    <header class="auth-header">
+      <div class="container auth-header-inner">
+        <a class="brand" href="index.html" aria-label="CarePoint Hospital homepage">
+          <span class="brand-mark"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6V3Z" fill="currentColor"/></svg></span>
+          <span class="brand-name">carepoint<span>hospital</span></span>
+        </a>
+        <a class="auth-back-link" href="index.html">← Back to homepage</a>
+      </div>
+    </header>
+
+    <main class="auth-main" id="login-main">
+      <section class="auth-card" aria-labelledby="login-title">
+        <div class="auth-art">
+          <div class="auth-art-ring ring-one"></div>
+          <div class="auth-art-ring ring-two"></div>
+          <div class="auth-art-cross" aria-hidden="true"><span></span><span></span></div>
+          <p class="auth-art-label">CAREPOINT <span>ADMIN PORTAL</span></p>
+          <div class="auth-art-message">
+            <span class="auth-art-kicker">A calm space to coordinate care</span>
+            <h2>Welcome back to your hospital workspace.</h2>
+            <p>Simple tools for keeping everyday hospital information organized.</p>
+          </div>
+          <div class="auth-art-footnote"><span></span> Student project UI concept</div>
+        </div>
+
+        <div class="auth-form-panel">
+          <div class="auth-form-heading">
+            <span class="form-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20v-1.5a7 7 0 0 1 14 0V20Z"/></svg></span>
+            <p class="eyebrow"><span></span> ADMIN ACCESS</p>
+            <h1 id="login-title">Sign in to continue</h1>
+            <p class="auth-subtitle">Enter your admin details to preview the dashboard.</p>
+          </div>
+
+          <form class="login-form" id="admin-login-form" action="#" method="post">
+            <div class="form-field">
+              <label for="username">Username or email</label>
+              <input id="username" name="username" type="text" autocomplete="username" placeholder="e.g. admin@carepoint.example" minlength="3" required>
+            </div>
+            <div class="form-field">
+              <label for="password">Password</label>
+              <div class="password-input-wrap">
+                <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" minlength="6" required>
+                <button class="password-toggle" id="password-toggle" type="button" aria-pressed="false" aria-label="Show password">Show</button>
+              </div>
+              <span class="field-hint">For this UI preview, enter any username and a password with at least 6 characters.</span>
+            </div>
+            <button class="button login-submit" type="submit">Sign in <span aria-hidden="true">→</span></button>
+            <p class="form-status" id="login-status" role="status" aria-live="polite">This is a design preview. Login authentication will be added in a later project stage.</p>
+          </form>
+
+          <div class="auth-safe-note"><span aria-hidden="true">i</span><p>Do not use a real password here. This page does not send or save your details.</p></div>
+          <a class="auth-mobile-home" href="index.html">Return to the public homepage</a>
+        </div>
+      </section>
+      <p class="auth-page-caption">A student project interface · Authentication is not connected yet</p>
+    </main>
+  </body>
+</html>
