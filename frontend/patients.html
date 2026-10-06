@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f8f7">
+    <meta name="description" content="Patient management interface preview for the CarePoint Hospital student project.">
+    <title>Patients | CarePoint Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/patients.css">
+    <script src="js/dashboard.js" defer></script>
+    <script src="js/patients.js" defer></script>
+  </head>
+  <body class="dashboard-page">
+    <a class="skip-link" href="#patients-main">Skip to patient management</a>
+    <div class="dashboard-layout">
+      <aside class="sidebar" id="dashboard-sidebar" aria-label="Admin navigation">
+        <a class="brand sidebar-brand" href="index.html" aria-label="CarePoint Hospital homepage">
+          <span class="brand-mark"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6V3Z" fill="currentColor"/></svg></span>
+          <span class="brand-name">carepoint<span>hospital</span></span>
+        </a>
+        <p class="sidebar-label">WORKSPACE</p>
+        <nav class="sidebar-navigation" aria-label="Dashboard sections">
+          <a class="sidebar-link" href="dashboard.html"><span class="sidebar-icon" aria-hidden="true">⌂</span> Overview</a>
+          <a class="sidebar-link sidebar-link-active" href="patients.html" aria-current="page"><span class="sidebar-icon" aria-hidden="true">＋</span> Patients</a>
+          <span class="sidebar-link sidebar-link-disabled" aria-disabled="true"><span class="sidebar-icon" aria-hidden="true">♡</span> Doctors <small>SOON</small></span>
+          <span class="sidebar-link sidebar-link-disabled" aria-disabled="true"><span class="sidebar-icon" aria-hidden="true">▦</span> Appointments <small>SOON</small></span>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="sidebar-project-note"><span class="note-dot"></span><p>UI preview<br><strong>Session-only sample data</strong></p></div>
+          <a class="sidebar-home-link" href="index.html">← Public homepage</a>
+          <a class="sidebar-logout" href="login.html"><span aria-hidden="true">↪</span> Back to login</a>
+        </div>
+      </aside>
+      <div class="sidebar-scrim" id="sidebar-scrim"></div>
+      <div class="dashboard-content-wrap">
+        <header class="dashboard-topbar">
+          <button class="sidebar-toggle" id="sidebar-toggle" type="button" aria-expanded="false" aria-controls="dashboard-sidebar" aria-label="Open dashboard navigation"><span></span><span></span><span></span></button>
+          <div class="topbar-context"><span class="topbar-dot"></span><span>Admin workspace</span></div>
+          <a class="topbar-public-link" href="index.html">View public site <span aria-hidden="true">↗</span></a>
+          <div class="admin-avatar" aria-label="Demo administrator">A</div>
+        </header>
+        <main class="dashboard-main patients-main" id="patients-main">
+          <div class="dashboard-heading-row">
+            <div>
+              <p class="eyebrow"><span></span> PATIENT RECORDS</p>
+              <h1>Patients</h1>
+              <p class="dashboard-welcome">Add and find patient details in this interface preview.</p>
+            </div>
+            <div class="dashboard-date"><span class="date-label">TODAY</span><strong id="dashboard-date">Date preview</strong></div>
+          </div>
+          <div class="demo-banner" role="note"><span aria-hidden="true">i</span><p><strong>Frontend demo:</strong> records are fictional and stay in this page only. They are not saved to MySQL or a server.</p></div>
+
+          <section class="patient-form-panel" aria-labelledby="add-patient-title">
+            <div class="patient-panel-heading">
+              <div><p class="eyebrow"><span></span> NEW RECORD</p><h2 id="add-patient-title">Add a patient</h2></div>
+              <span class="sample-pill">UI PREVIEW</span>
+            </div>
+            <form id="patient-form" class="patient-form">
+              <label class="patient-field patient-field-name" for="patient-name">Full name <span aria-hidden="true">*</span>
+                <input id="patient-name" name="name" type="text" autocomplete="name" minlength="2" maxlength="60" placeholder="e.g. Aarav Mehta" required>
+              </label>
+              <label class="patient-field" for="patient-age">Age <span aria-hidden="true">*</span>
+                <input id="patient-age" name="age" type="number" min="0" max="120" inputmode="numeric" placeholder="Age" required>
+              </label>
+              <label class="patient-field" for="patient-gender">Gender <span aria-hidden="true">*</span>
+                <select id="patient-gender" name="gender" required>
+                  <option value="" selected disabled>Select</option>
+                  <option>Female</option><option>Male</option><option>Other</option><option>Prefer not to say</option>
+                </select>
+              </label>
+              <label class="patient-field patient-field-contact" for="patient-phone">Phone number <span aria-hidden="true">*</span>
+                <input id="patient-phone" name="phone" type="tel" autocomplete="tel" minlength="7" maxlength="15" pattern="[0-9+() -]{7,15}" placeholder="e.g. 98765 43210" required>
+              </label>
+              <button class="patient-submit" type="submit"><span aria-hidden="true">＋</span> Add patient</button>
+            </form>
+            <p id="patient-feedback" class="patient-feedback" role="status" aria-live="polite"></p>
+          </section>
+
+          <section class="patient-list-panel" aria-labelledby="patient-list-title">
+            <div class="patient-list-heading">
+              <div><p class="eyebrow"><span></span> DIRECTORY</p><h2 id="patient-list-title">Patient list <span class="patient-count" id="patient-count">0 records</span></h2></div>
+              <label class="patient-search-label" for="patient-search">Search patients
+                <input id="patient-search" type="search" placeholder="Search by name or phone">
+              </label>
+            </div>
+            <div class="table-scroll">
+              <table class="appointment-table patient-table">
+                <thead><tr><th scope="col">PATIENT</th><th scope="col">AGE</th><th scope="col">GENDER</th><th scope="col">PHONE</th><th scope="col"><span class="visually-hidden">ACTION</span></th></tr></thead>
+                <tbody id="patient-table-body"></tbody>
+              </table>
+            </div>
+            <p class="table-footnote" id="patient-empty-state">No matching patient records.</p>
+          </section>
+          <footer class="dashboard-footer"><span>CarePoint Hospital · BCA student project</span><span>Demo only — no authentication or database connection.</span></footer>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
