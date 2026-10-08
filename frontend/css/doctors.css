@@ -1,0 +1,23 @@
+.doctors-main { max-width:1160px; }
+.doctor-list-panel { overflow:hidden; border:1px solid #e1ebe8; border-radius:8px; background:#fff; box-shadow:0 2px 8px rgba(29,67,65,.025); }
+.doctor-list-heading { display:flex; min-height:78px; align-items:end; justify-content:space-between; gap:18px; padding:14px 19px; }
+.doctor-list-heading .eyebrow { margin:0 0 3px; font-size:.56rem; }
+.doctor-list-heading h2 { margin:0; font-size:1.05rem; letter-spacing:-.04em; }
+.doctor-count { margin-left:6px; color:#91a09e; font-family:var(--font-body); font-size:.61rem; font-weight:500; letter-spacing:0; }
+.doctor-search-label { display:grid; width:min(270px,45%); gap:5px; color:#829291; font-size:.59rem; font-weight:700; }
+.doctor-search-label input { width:100%; min-height:35px; padding:0 10px; border:1px solid #dce7e3; border-radius:5px; outline:none; color:#355b5b; font:500 .72rem var(--font-body); }
+.doctor-search-label input:focus { border-color:#75a99c; box-shadow:0 0 0 3px rgba(92,157,142,.12); }
+.doctor-table { min-width:760px; }
+.doctor-table td { height:61px; }
+.doctor-table td:first-child { display:flex; align-items:center; gap:9px; color:#38595a; font-weight:600; }
+.doctor-avatar { display:grid; width:30px; height:30px; flex:0 0 auto; place-items:center; border-radius:50%; background:#e7eff6; color:#577f9e; font-size:.56rem; font-weight:800; }
+.doctor-specialty { color:#587674; }
+.doctor-availability { display:inline-flex; align-items:center; gap:6px; padding:4px 8px; border-radius:20px; background:#eaf5ed; color:#4d8660; font-size:.59rem; font-weight:700; }
+.doctor-availability::before { width:5px; height:5px; border-radius:50%; background:currentColor; content:''; }
+.doctor-empty-row td { height:63px; color:#91a09e; text-align:center; }
+@media(max-width:600px) {
+  .doctors-main .dashboard-heading-row { flex-direction:column; gap:10px; }
+  .doctors-main .dashboard-date { justify-items:start; padding:0; }
+  .doctor-list-heading { align-items:flex-start; flex-direction:column; padding:13px; }
+  .doctor-search-label { width:100%; }
+}

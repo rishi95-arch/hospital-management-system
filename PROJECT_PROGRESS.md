@@ -8,10 +8,10 @@ This file tracks actual work completed in the Hospital Management Web Applicatio
 - [x] Day 2 — Public hospital homepage with responsive navigation, introduction, services, departments, contact section, and footer.
 - [x] Day 3 — Admin login and dashboard UI previews, including basic browser-side interactions.
 - [x] Day 4 — Patient management UI preview with add, search, and remove interactions using temporary sample data.
+- [x] Day 5 — Doctor directory and appointment scheduling UI previews with basic browser-side interactions.
 
 ## Pending
 
-- [ ] Day 5 — Create doctor and appointment interfaces.
 - [ ] Day 6 — Design the MySQL schema and sample data.
 - [ ] Day 7 — Add Java model classes and explain the OOP concepts used.
 - [ ] Day 8 — Connect the Java application to MySQL with JDBC.
@@ -39,7 +39,7 @@ This file tracks actual work completed in the Hospital Management Web Applicatio
 - Added `frontend/login.html` and `frontend/dashboard.html`; the public homepage footer now links to the login preview.
 - Added `frontend/css/forms.css`, `frontend/css/dashboard.css`, `frontend/js/login.js`, and `frontend/js/dashboard.js`.
 - Login fields use basic browser validation. The password can be shown/hidden. Submitting valid-looking values only shows a note; it does not log in, send, or save credentials.
-- The dashboard displays fictional sample totals and appointment rows. Patient, doctor, and appointment navigation is visibly marked “Soon”; no records are read from or written to MySQL.
+- The dashboard displays fictional sample totals and appointment rows. At the end of Day 3, the other management modules were still marked “Soon”; they were introduced as UI previews on Days 4–5. No records are read from or written to MySQL.
 - The dashboard date and mobile sidebar menu work in the UI preview. Authentication and database connectivity remain pending.
 
 ## Day 4 notes
@@ -47,7 +47,16 @@ This file tracks actual work completed in the Hospital Management Web Applicatio
 - Added `frontend/patients.html`, `frontend/css/patients.css`, and `frontend/js/patients.js`.
 - Added a patient form for name, age, gender, and phone number, with browser checks plus a small JavaScript check for names/phone numbers made of spaces or too few digits.
 - Added three fictional sample patients, live search by name or phone number, and a remove action. Adding/removing changes only the in-memory preview for the current page; refreshing loses changes.
-- Linked Patients in the admin navigation from the dashboard and marked it active on the patient page. Doctors and Appointments remain unavailable previews.
+- Linked Patients in the admin navigation from the dashboard and marked it active on the patient page. Doctor and appointment interfaces had not been built yet at the end of Day 4; Day 5 adds those UI previews.
 - Checked page markup/asset links, JavaScript syntax, form submission, search filtering, and removing a temporary preview record in the browser. No Servlet, JDBC, or MySQL code was added.
+
+## Day 5 notes
+
+- Added `frontend/doctors.html`, `frontend/css/doctors.css`, and `frontend/js/doctors.js` for a fictional doctor directory with name/department search.
+- Added `frontend/appointments.html`, `frontend/css/appointments.css`, and `frontend/js/appointments.js` for a sample appointment form and schedule list.
+- Appointment options use fictional sample patients/doctors. The form requires patient, doctor, date, and time, disallows past dates, and blocks duplicate doctor/date/time slots in the current page preview.
+- Appointment search filters by patient or doctor. New appointments remain in memory only and disappear after leaving or refreshing the page.
+- Connected Dashboard, Patients, Doctors, and Appointments links across the admin sidebar. Verified doctor search, appointment conflict handling, adding an appointment, appointment search, JavaScript syntax, HTML links, and whitespace checks in the browser/local checks.
+- No Servlet, JDBC, or MySQL code was added; records are still demonstration data.
 
 Roadmap items may be adjusted to match actual progress and course requirements. Do not mark pending work complete before it is implemented and checked.

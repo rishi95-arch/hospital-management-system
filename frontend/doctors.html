@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f8f7">
+    <meta name="description" content="Doctor directory interface preview for the CarePoint Hospital student project.">
+    <title>Doctors | CarePoint Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/doctors.css">
+    <script src="js/dashboard.js" defer></script>
+    <script src="js/doctors.js" defer></script>
+  </head>
+  <body class="dashboard-page">
+    <a class="skip-link" href="#doctors-main">Skip to doctor directory</a>
+    <div class="dashboard-layout">
+      <aside class="sidebar" id="dashboard-sidebar" aria-label="Admin navigation">
+        <a class="brand sidebar-brand" href="index.html" aria-label="CarePoint Hospital homepage">
+          <span class="brand-mark"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6V3Z" fill="currentColor"/></svg></span>
+          <span class="brand-name">carepoint<span>hospital</span></span>
+        </a>
+        <p class="sidebar-label">WORKSPACE</p>
+        <nav class="sidebar-navigation" aria-label="Dashboard sections">
+          <a class="sidebar-link" href="dashboard.html"><span class="sidebar-icon" aria-hidden="true">⌂</span> Overview</a>
+          <a class="sidebar-link" href="patients.html"><span class="sidebar-icon" aria-hidden="true">＋</span> Patients</a>
+          <a class="sidebar-link sidebar-link-active" href="doctors.html" aria-current="page"><span class="sidebar-icon" aria-hidden="true">♡</span> Doctors</a>
+          <a class="sidebar-link" href="appointments.html"><span class="sidebar-icon" aria-hidden="true">▦</span> Appointments</a>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="sidebar-project-note"><span class="note-dot"></span><p>UI preview<br><strong>Sample data only</strong></p></div>
+          <a class="sidebar-home-link" href="index.html">← Public homepage</a>
+          <a class="sidebar-logout" href="login.html"><span aria-hidden="true">↪</span> Back to login</a>
+        </div>
+      </aside>
+      <div class="sidebar-scrim" id="sidebar-scrim"></div>
+      <div class="dashboard-content-wrap">
+        <header class="dashboard-topbar">
+          <button class="sidebar-toggle" id="sidebar-toggle" type="button" aria-expanded="false" aria-controls="dashboard-sidebar" aria-label="Open dashboard navigation"><span></span><span></span><span></span></button>
+          <div class="topbar-context"><span class="topbar-dot"></span><span>Admin workspace</span></div>
+          <a class="topbar-public-link" href="index.html">View public site <span aria-hidden="true">↗</span></a>
+          <div class="admin-avatar" aria-label="Demo administrator">A</div>
+        </header>
+        <main class="dashboard-main doctors-main" id="doctors-main">
+          <div class="dashboard-heading-row">
+            <div>
+              <p class="eyebrow"><span></span> CARE TEAM</p>
+              <h1>Doctors</h1>
+              <p class="dashboard-welcome">Browse the hospital team in this directory preview.</p>
+            </div>
+            <div class="dashboard-date"><span class="date-label">TODAY</span><strong id="dashboard-date">Date preview</strong></div>
+          </div>
+          <div class="demo-banner" role="note"><span aria-hidden="true">i</span><p><strong>Sample directory:</strong> names, departments, and contact details below are fictional examples, not hospital records.</p></div>
+          <section class="doctor-list-panel" aria-labelledby="doctor-list-title">
+            <div class="doctor-list-heading">
+              <div><p class="eyebrow"><span></span> DIRECTORY</p><h2 id="doctor-list-title">Our doctors <span class="doctor-count" id="doctor-count">0 doctors</span></h2></div>
+              <label class="doctor-search-label" for="doctor-search">Find a doctor
+                <input id="doctor-search" type="search" placeholder="Search name or department">
+              </label>
+            </div>
+            <div class="table-scroll">
+              <table class="appointment-table doctor-table">
+                <thead><tr><th scope="col">DOCTOR</th><th scope="col">DEPARTMENT</th><th scope="col">EXPERIENCE</th><th scope="col">PHONE</th><th scope="col">AVAILABILITY</th></tr></thead>
+                <tbody id="doctor-table-body"></tbody>
+              </table>
+            </div>
+            <p class="table-footnote" id="doctor-empty-state">Doctor details are demonstration content only.</p>
+          </section>
+          <footer class="dashboard-footer"><span>CarePoint Hospital · BCA student project</span><span>Directory preview only — not connected to a database.</span></footer>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
