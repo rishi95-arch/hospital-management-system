@@ -12,7 +12,7 @@ This file tracks actual work completed in the Hospital Management Web Applicatio
 
 ## Pending
 
-- [ ] Day 6 — Design the MySQL schema and sample data.
+- [x] Day 6 — Create the initial MySQL schema and fictional sample data scripts; static checks passed. MySQL execution remains unverified because a local MySQL client/server is not available.
 - [ ] Day 7 — Add Java model classes and explain the OOP concepts used.
 - [ ] Day 8 — Connect the Java application to MySQL with JDBC.
 - [ ] Days 9–10 — Implement patient, doctor, and appointment operations.
@@ -60,3 +60,10 @@ This file tracks actual work completed in the Hospital Management Web Applicatio
 - No Servlet, JDBC, or MySQL code was added; records are still demonstration data.
 
 Roadmap items may be adjusted to match actual progress and course requirements. Do not mark pending work complete before it is implemented and checked.
+
+## Day 6 notes
+
+- Added `database/schema.sql` with tables for admin users, patients, doctors, and appointments, including primary/foreign keys, indexes, safe appointment-history delete behavior, and duplicate doctor/time-slot prevention.
+- Added `database/sample-data.sql` with fictional patient, doctor, and appointment records. No admin password is seeded; the later application must create hashed credentials.
+- Updated this progress file and README to document the scripts and their current verification status.
+- Static structure checks and `git diff --check` passed. The SQL was not executed against MySQL because the MySQL client/server is not available in the environment, so server compatibility and actual inserts still need verification.

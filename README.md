@@ -65,6 +65,12 @@ README.md
 .gitignore
 ```
 
+## Database foundation (Day 6)
+
+The initial MySQL schema is in `database/schema.sql`; fictional development records are in `database/sample-data.sql`. Import the schema first, then the sample data, using MySQL Workbench or the MySQL command-line client. The schema includes admin accounts (password hashes only), patients, doctors, appointments, foreign keys, lookup indexes, and a unique doctor/date/time appointment slot. Sample records are invented for demos and should not be used as real patient data. No admin account is included because the application must create credentials using secure password hashing.
+
+These SQL scripts have not yet been run against a MySQL server on this machine: the MySQL client/server was not found in PATH during setup inspection. JDBC and database-backed application behavior are still pending.
+
 ## Tools
 
 Use a JDK, Git, a code editor, Apache Tomcat, and MySQL. The local setup should be checked before installing anything. Java and Git are currently available; Tomcat and MySQL command-line tools were not found in PATH during the Day 1 check.
